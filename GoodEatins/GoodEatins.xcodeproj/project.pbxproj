@@ -12,6 +12,9 @@
 		A33524B6220C5D4600CAEAF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A33524B4220C5D4600CAEAF6 /* Main.storyboard */; };
 		A33524B8220C5D4600CAEAF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A33524B7220C5D4600CAEAF6 /* Assets.xcassets */; };
 		A33524BB220C5D4600CAEAF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A33524B9220C5D4600CAEAF6 /* LaunchScreen.storyboard */; };
+		A33524C6220C5DF900CAEAF6 /* FoodCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33524C5220C5DF900CAEAF6 /* FoodCategory.swift */; };
+		A33524C8220C5E4E00CAEAF6 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33524C7220C5E4E00CAEAF6 /* Recipe.swift */; };
+		A33524CA220C5E9000CAEAF6 /* DataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33524C9220C5E9000CAEAF6 /* DataSet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		A33524B7220C5D4600CAEAF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A33524BA220C5D4600CAEAF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A33524BC220C5D4600CAEAF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A33524C5220C5DF900CAEAF6 /* FoodCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategory.swift; sourceTree = "<group>"; };
+		A33524C7220C5E4E00CAEAF6 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		A33524C9220C5E9000CAEAF6 /* DataSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,9 @@
 		A33524AF220C5D4600CAEAF6 /* GoodEatins */ = {
 			isa = PBXGroup;
 			children = (
+				A33524C4220C5DD600CAEAF6 /* Model */,
+				A33524C3220C5DD100CAEAF6 /* View */,
+				A33524C2220C5DC800CAEAF6 /* Controller */,
 				A33524B0220C5D4600CAEAF6 /* AppDelegate.swift */,
 				A33524B2220C5D4600CAEAF6 /* ViewController.swift */,
 				A33524B4220C5D4600CAEAF6 /* Main.storyboard */,
@@ -62,6 +71,30 @@
 				A33524BC220C5D4600CAEAF6 /* Info.plist */,
 			);
 			path = GoodEatins;
+			sourceTree = "<group>";
+		};
+		A33524C2220C5DC800CAEAF6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A33524C3220C5DD100CAEAF6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A33524C4220C5DD600CAEAF6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A33524C5220C5DF900CAEAF6 /* FoodCategory.swift */,
+				A33524C7220C5E4E00CAEAF6 /* Recipe.swift */,
+				A33524C9220C5E9000CAEAF6 /* DataSet.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +169,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A33524B3220C5D4600CAEAF6 /* ViewController.swift in Sources */,
+				A33524CA220C5E9000CAEAF6 /* DataSet.swift in Sources */,
+				A33524C6220C5DF900CAEAF6 /* FoodCategory.swift in Sources */,
 				A33524B1220C5D4600CAEAF6 /* AppDelegate.swift in Sources */,
+				A33524C8220C5E4E00CAEAF6 /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
