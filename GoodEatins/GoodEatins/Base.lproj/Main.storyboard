@@ -22,14 +22,14 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="149" id="vGn-mf-Ace">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="149" id="vGn-mf-Ace" customClass="CategoryCell" customModule="GoodEatins" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="149"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vGn-mf-Ace" id="U5c-AZ-4Y9">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="148.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="burger6" translatesAutoresizingMaskIntoConstraints="NO" id="y4J-4L-hDB">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="burger6" translatesAutoresizingMaskIntoConstraints="NO" id="03A-3D-eol">
                                                     <rect key="frame" x="8" y="0.0" width="359" height="140.5"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Burgers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAp-wB-xl4">
@@ -40,15 +40,19 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="y4J-4L-hDB" secondAttribute="trailing" constant="8" id="7RA-JM-WDc"/>
-                                                <constraint firstItem="y4J-4L-hDB" firstAttribute="top" secondItem="U5c-AZ-4Y9" secondAttribute="top" id="BK4-fw-4jd"/>
-                                                <constraint firstAttribute="bottom" secondItem="y4J-4L-hDB" secondAttribute="bottom" constant="8" id="Elh-f9-YkM"/>
                                                 <constraint firstAttribute="trailing" secondItem="YAp-wB-xl4" secondAttribute="trailing" constant="20" id="K5d-Id-1eF"/>
-                                                <constraint firstItem="y4J-4L-hDB" firstAttribute="leading" secondItem="U5c-AZ-4Y9" secondAttribute="leading" constant="8" id="ovk-go-u0e"/>
+                                                <constraint firstAttribute="trailing" secondItem="03A-3D-eol" secondAttribute="trailing" constant="8" id="Tkb-TD-W9x"/>
+                                                <constraint firstItem="03A-3D-eol" firstAttribute="leading" secondItem="U5c-AZ-4Y9" secondAttribute="leading" constant="8" id="hBg-3t-Ml5"/>
+                                                <constraint firstAttribute="bottom" secondItem="03A-3D-eol" secondAttribute="bottom" constant="8" id="hMc-q1-TEa"/>
+                                                <constraint firstItem="03A-3D-eol" firstAttribute="top" secondItem="U5c-AZ-4Y9" secondAttribute="top" id="qbA-lU-H4x"/>
                                                 <constraint firstItem="YAp-wB-xl4" firstAttribute="leading" secondItem="U5c-AZ-4Y9" secondAttribute="leading" constant="20" id="wdc-Gc-p79"/>
                                                 <constraint firstItem="YAp-wB-xl4" firstAttribute="centerY" secondItem="U5c-AZ-4Y9" secondAttribute="centerY" id="x73-iT-zNu"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="categoryImg" destination="03A-3D-eol" id="2AO-Uj-MIH"/>
+                                            <outlet property="categoryTitle" destination="YAp-wB-xl4" id="BCY-ba-6xO"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -63,6 +67,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="OA7-k7-jUE"/>
+                    <connections>
+                        <outlet property="tableView" destination="wAy-HB-t6w" id="R6Y-mL-6El"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
