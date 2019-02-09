@@ -17,6 +17,7 @@
 		A33524CA220C5E9000CAEAF6 /* DataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33524C9220C5E9000CAEAF6 /* DataSet.swift */; };
 		A3F1CD88220F7814001A5E4E /* RecipesSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F1CD87220F7814001A5E4E /* RecipesSelectionVC.swift */; };
 		A3F1CD8A220F7B8E001A5E4E /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F1CD89220F7B8E001A5E4E /* RecipeCell.swift */; };
+		A3F1CD8C220F8217001A5E4E /* RecipeDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F1CD8B220F8217001A5E4E /* RecipeDetailVC.swift */; };
 		A3FA7F95220DAD02009E6C65 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA7F94220DAD02009E6C65 /* CategoryCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		A33524C9220C5E9000CAEAF6 /* DataSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSet.swift; sourceTree = "<group>"; };
 		A3F1CD87220F7814001A5E4E /* RecipesSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesSelectionVC.swift; sourceTree = "<group>"; };
 		A3F1CD89220F7B8E001A5E4E /* RecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
+		A3F1CD8B220F8217001A5E4E /* RecipeDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailVC.swift; sourceTree = "<group>"; };
 		A3FA7F94220DAD02009E6C65 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +85,7 @@
 			children = (
 				A33524B2220C5D4600CAEAF6 /* HomeVC.swift */,
 				A3F1CD87220F7814001A5E4E /* RecipesSelectionVC.swift */,
+				A3F1CD8B220F8217001A5E4E /* RecipeDetailVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3F1CD8C220F8217001A5E4E /* RecipeDetailVC.swift in Sources */,
 				A33524B3220C5D4600CAEAF6 /* HomeVC.swift in Sources */,
 				A33524CA220C5E9000CAEAF6 /* DataSet.swift in Sources */,
 				A33524C6220C5DF900CAEAF6 /* FoodCategory.swift in Sources */,

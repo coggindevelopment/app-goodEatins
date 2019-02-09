@@ -131,11 +131,62 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="JZw-jL-4hE" id="tYK-n6-fjl"/>
+                        <segue destination="Heh-hv-zMe" kind="show" identifier="toRecipeSelection" id="MQG-Wz-NHg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FpR-lA-r4G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1888.8" y="132.68365817091455"/>
+        </scene>
+        <!--Recipe DetailVC-->
+        <scene sceneID="OHe-bL-t0z">
+            <objects>
+                <viewController id="Heh-hv-zMe" customClass="RecipeDetailVC" customModule="GoodEatins" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sbb-rr-5gv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="salad1" translatesAutoresizingMaskIntoConstraints="NO" id="U89-zD-CNH">
+                                <rect key="frame" x="0.0" y="64" width="375" height="225"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="225" id="IAK-wB-Qvx"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salmon Salad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kW6-NM-KrH">
+                                <rect key="frame" x="118" y="323" width="139" height="29"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tVk-19-jS3">
+                                <rect key="frame" x="20" y="370" width="335" height="21"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tVk-19-jS3" firstAttribute="leading" secondItem="LW0-rB-IwP" secondAttribute="leading" constant="20" id="Ado-5S-eXu"/>
+                            <constraint firstItem="U89-zD-CNH" firstAttribute="trailing" secondItem="LW0-rB-IwP" secondAttribute="trailing" id="Aov-rb-BW9"/>
+                            <constraint firstItem="kW6-NM-KrH" firstAttribute="top" secondItem="U89-zD-CNH" secondAttribute="bottom" constant="34" id="C0u-W5-6gK"/>
+                            <constraint firstItem="U89-zD-CNH" firstAttribute="leading" secondItem="LW0-rB-IwP" secondAttribute="leading" id="ECS-Ic-IlN"/>
+                            <constraint firstItem="LW0-rB-IwP" firstAttribute="trailing" secondItem="tVk-19-jS3" secondAttribute="trailing" constant="20" id="GTK-1z-N7E"/>
+                            <constraint firstItem="tVk-19-jS3" firstAttribute="top" secondItem="kW6-NM-KrH" secondAttribute="bottom" constant="18" id="WtA-vD-FgT"/>
+                            <constraint firstItem="U89-zD-CNH" firstAttribute="top" secondItem="LW0-rB-IwP" secondAttribute="top" id="Y5B-NU-acK"/>
+                            <constraint firstItem="kW6-NM-KrH" firstAttribute="centerX" secondItem="Sbb-rr-5gv" secondAttribute="centerX" id="s24-vU-PtK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LW0-rB-IwP"/>
+                    </view>
+                    <connections>
+                        <outlet property="recipeImg" destination="U89-zD-CNH" id="2zM-AX-ngh"/>
+                        <outlet property="recipeInstructions" destination="tVk-19-jS3" id="CB4-Xb-fdw"/>
+                        <outlet property="recipeTitle" destination="kW6-NM-KrH" id="EcQ-sM-yDO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9FY-Ri-XQH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2764" y="132.68365817091455"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yiY-ZR-7ys">
@@ -158,6 +209,7 @@
     </scenes>
     <resources>
         <image name="burger6" width="966" height="725"/>
+        <image name="salad1" width="1050" height="700"/>
         <image name="salad6" width="1050" height="700"/>
     </resources>
 </document>

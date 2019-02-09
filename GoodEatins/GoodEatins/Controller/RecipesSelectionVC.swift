@@ -15,6 +15,8 @@ class RecipesSelectionVC: UIViewController, UICollectionViewDelegate, UICollecti
     var selectedCategory: String!
     var recipes: [Recipe]!
     let data = DataSet()
+    
+    var recipeToPass: Recipe!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,5 +43,15 @@ class RecipesSelectionVC: UIViewController, UICollectionViewDelegate, UICollecti
         let cellDimension = (width / 2) - 15
         return CGSize(width: cellDimension, height: cellDimension)
     }
-
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        recipeToPass = recipes[indexPath.item]
+        performSegue(withIdentifier: "toRecipeSelection", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let detailsVC = segue.destination as? RecipeDetailVC {
+            detailsVC.selectedRecipe = recipeToPass
+        }
+    }
 }
